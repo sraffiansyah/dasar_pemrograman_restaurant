@@ -153,7 +153,7 @@ while True:
                 print("Pembayaran eWallet berhasil.")
 
             else:
-                print("Metode pembayaran tidak dikenali.")
+                print("Metode pembayaran tiak dikenali.")
                 input("Tekan Enter untuk kembali...")
                 continue
 

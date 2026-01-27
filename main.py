@@ -61,7 +61,7 @@ while True:
             print_per_huruf("Anda akan kembali ke menu utama...")
             time.sleep(2.5)
             continue
-        
+
         while True:
             clear_screen()
             print(f"total Harga pesanan saat ini:  {formatRupiah(totalHargaAll)}\n")
@@ -126,7 +126,7 @@ while True:
             print_per_huruf("Anda akan kembali ke menu utama...")
             time.sleep(2.5)
             continue
-        
+
         while True:
             clear_screen()
             print(f"total Harga pesanan saat ini:  {formatRupiah(totalHargaAll)}\n")
@@ -182,8 +182,8 @@ while True:
                     continue
             if beliLagi == 'n':
                 break
-        
-        
+
+
     # ========================= STRUK PEMBAYARAN =========================
     elif pilihan == '3':
         if not sudahMemesan:
@@ -196,7 +196,7 @@ while True:
         # Mulai proses pembayaran
         while True:
             clear_screen()
-            print(f" ________________________________________________________________________________ ")
+            print(f" _________________________________________________________________________________ ")
             print(f"|                             ***** RESTAURANT *****                              |")
             print(f"| ------------------------------------------------------------------------------- |")
             print(f"|   NO  |  Pesanan           |  Jumlah  |  Harga Satuan  |  Jumlah Harga          |")
@@ -209,7 +209,7 @@ while True:
                 print(f"|  {"Bayar":>52}  |  {formatRupiah(uangBayar):<20}  |")
                 print(f"|  {"Kembalian":>52}  |  {formatRupiah(uangKembalian):<20}  |")
             print(f"|_________________________________________________________________________________|")
-            
+
             if sudahBayar == False:
                 bayar = inputAngka("Masukkan Jumlah Uang Pembayaran: Rp ")
                 if bayar < totalHargaAll:
